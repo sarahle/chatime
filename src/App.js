@@ -8,15 +8,23 @@ function App() {
     
     <header className="header">
       <div className="logo" />
-      CHATTER
+      CHATIME
     </header>
     
-    <div className="message">
-      {messages[0].text}
-    </div>
+    <main className="info">
+      {messages.map((m,i)=> {
+        return <div key={i} className="message-row">
+          <div className="message">
+            {m.text}
+          </div>
+      </div>
+      })}
+    </main>
     
     <TextInput 
-      send={(t)=> setMessages([{text:t}])}
+      send={(t)=> setMessages(
+        [...messages, {text:t}]
+      )}
     />
     
   </div>

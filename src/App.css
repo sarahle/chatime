@@ -32,6 +32,26 @@
   background-size:cover;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.message-row{
+  width: 100%;
+}
+
+.message{
+  background: black;
+  color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+}
+
 .text-input{
   width: 100%;
   border-top: 1px solid white;
@@ -45,27 +65,27 @@
 .input-box{
   height: 1.6rem;
   width: calc(100% - 1rem);
-  border-radius: 0.8rem;
+  border-radius: 1rem;
   border: 1px solid white;
   outline: none;
   padding-left: 1rem;
   margin: 1rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
 .send-button{
   border-radius: 100%;
   position: absolute;
-  right: 1.5rem;
-  top: 0.8rem;
+  right: 1rem;
+  top: 0.7rem;
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.5);
   color: black;
   cursor: pointer;
   outline: none;
-  height: 1,5rem;
-  width: 1.5rem;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 
