@@ -34,9 +34,9 @@
 
 .info{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   flex: 1;
-  justify-content: flex-end;
+  overflow: auto;
 }
 
 .message-row{
@@ -47,7 +47,7 @@
   background: black;
   color: white;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 0.4rem;
   display: inline-block;
   padding: 0.4rem 1.2rem;
 }
@@ -86,6 +86,19 @@
   outline: none;
   height: 1.6rem;
   width: 1.6rem;
+}
+
+.send-button[disabled]{
+  background: gray;
+  cursor: default;
+}
+
+.name-picker{
+  display:flex;
+  margin:0 12px;
+}
+.name-picker input {
+  max-width:100px;
 }
 
 

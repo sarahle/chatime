@@ -1,29 +1,30 @@
 import { useState } from 'react';
 import './App.css';
 import TextInput from './TextInput';
+import Message from './Message';
+import NamePicker from './NamePicker';
+
 
 function App() {
-  const [messages,setMessages] = useState([{text:'hello'}])
+  const [messages,setMessages] = useState([])
+  const [username,setUsername] = useState('')
   return <div className="App">
     
     <header className="header">
       <div className="logo" />
       CHATIME
+      <NamePicker saveName={setUsername}/>
     </header>
     
     <main className="info">
       {messages.map((m,i)=> {
-        return <div key={i} className="message-row">
-          <div className="message">
-            {m.text}
-          </div>
-      </div>
+        return <Message key={i} {...m} />
       })}
     </main>
     
     <TextInput 
       send={(t)=> setMessages(
-        [...messages, {text:t}]
+        [{text:t, name:username, date: new Date()}, ...messages]
       )}
     />
     
