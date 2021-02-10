@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {FiEdit} from 'react-icons/fi';
 
 function NamePicker(props){
     const [showInput, setShowInput] = useState(false)
@@ -21,9 +22,9 @@ function NamePicker(props){
     }
 
     return <div className="name-picker">
-        <div>{username}</div>
+        <div>username: {username}</div>
         <button onClick={()=> setShowInput(true)}>
-            EDIT
+            <FiEdit title="edit"/>
         </button>
     </div>
 }

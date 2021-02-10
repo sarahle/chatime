@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import {useState} from 'react';
+import {FiSend} from "react-icons/fi";
 
 function TextInput(props) {
     const[text, setText] = useState('')
@@ -26,7 +27,9 @@ function TextInput(props) {
         onClick={sendMessage} 
         disabled={!text}
         className="send-button">
-            ↑
+          <FiSend title="send" 
+            style={{minWidth:'1rem', marginRight:15}} 
+          />
       </button>
     </footer>
   }

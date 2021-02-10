@@ -47,9 +47,19 @@
   background: black;
   color: white;
   border-radius: 1rem;
-  margin: 0.4rem;
+  margin: 0.8rem;
   display: inline-block;
   padding: 0.4rem 1.2rem;
+  position: relative;
+}
+
+.message-name{
+  position: absolute;
+  top: -1rem;
+  left: 0.8rem;
+  font-size: 0.55rem;
+  color:black;
+  font-weight: bold;
 }
 
 .text-input{
@@ -60,6 +70,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  background: gray;
 }
 
 .input-box{
@@ -70,8 +81,8 @@
   outline: none;
   padding-left: 1rem;
   margin: 1rem;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background:rgb(160, 192, 235);
+  color: black;
 }
 
 .send-button{
@@ -80,7 +91,7 @@
   right: 1rem;
   top: 0.7rem;
   border: 1px solid white;
-  background: rgba(255, 255, 255, 0.5);
+  background: #83a4d4;
   color: black;
   cursor: pointer;
   outline: none;
@@ -89,16 +100,29 @@
 }
 
 .send-button[disabled]{
-  background: gray;
+  background: rgba(255, 255, 255, 0.8);
   cursor: default;
 }
 
 .name-picker{
   display:flex;
-  margin:0 12px;
+  margin:0rem 1.5rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  color: #2c78eb;
 }
+
 .name-picker input {
-  max-width:100px;
+  max-width: 10rem;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
 }
 
-
+.name-picker button{
+  background: #83a4d4;
+  border: 0rem;
+  border-radius: 0.5rem;
+  margin-left: 0.3rem;
+}
