@@ -21,10 +21,10 @@
 }
 
 .logo{
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right:10px;
-  background: url(https://media4.giphy.com/media/KztT2c4u8mYYUiMKdJ/200.gif);
+  height: 3rem;
+  width: 3rem;
+  margin-right:1rem;
+  background: url(https://media0.giphy.com/media/ZO7JG72fMpXgrN2uCI/source.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -39,6 +39,7 @@
 
 .message-row{
   width: 100%;
+  display: flex;
 }
 
 .message{
@@ -90,17 +91,19 @@
   top: 0.7rem;
   border: 1px solid white;
   background: #395B4E;
-  color: black;
+  color: white;
   cursor: pointer;
   outline: none;
   height: 1.6rem;
   width: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .send-button[disabled]{
   background: rgba(255, 255, 255, 0.8);
   cursor: default;
-  color: white;
 }
 
 .name-picker{

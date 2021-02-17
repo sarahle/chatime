@@ -28,7 +28,7 @@ function TextInput(props) {
         disabled={!text}
         className="send-button">
           <FiSend title="send" 
-            style={{minWidth:'1rem', marginRight:120, marginTop:5}} 
+            style={{minWidth:'1rem', marginRight:2, marginTop:2}} 
           />
       </button>
     </footer>
