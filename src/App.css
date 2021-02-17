@@ -1,8 +1,6 @@
 .App {
   text-align: center;
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #78C1A6;  /* fallback for old browsers */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -11,14 +9,14 @@
 }
 
 .header{
-  background:rgba(255,255,255,0.2);
+  background:#4C826E;
   border-bottom:1px solid white;
   height: 3rem;
   display:flex;
   align-items: center;
   padding: 0 12px;
   font-size:1.2rem;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -70,18 +68,18 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background: gray;
+  background: #4C826E;
 }
 
 .input-box{
   height: 1.6rem;
-  width: calc(100% - 1rem);
+  width: calc(100% - 0.4rem);
   border-radius: 1rem;
   border: 1px solid white;
   outline: none;
   padding-left: 1rem;
   margin: 1rem;
-  background:rgb(160, 192, 235);
+  background: #A1DAC5;
   color: black;
 }
 
@@ -91,7 +89,7 @@
   right: 1rem;
   top: 0.7rem;
   border: 1px solid white;
-  background: #83a4d4;
+  background: #395B4E;
   color: black;
   cursor: pointer;
   outline: none;
@@ -102,6 +100,7 @@
 .send-button[disabled]{
   background: rgba(255, 255, 255, 0.8);
   cursor: default;
+  color: white;
 }
 
 .name-picker{
@@ -110,7 +109,7 @@
   position: absolute;
   top: 0.75rem;
   right: 0.5rem;
-  color: #2c78eb;
+  color: white;
 }
 
 .name-picker input {
@@ -121,7 +120,7 @@
 }
 
 .name-picker button{
-  background: #83a4d4;
+  background: #A1DAC5;
   border: 0rem;
   border-radius: 0.5rem;
   margin-left: 0.3rem;
